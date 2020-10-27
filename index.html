@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>アンケート集計君</title>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="./main.js"></script>
+</head>
+<body>
+  <h1>アンケート集計君（俺のGoogle フォーム専用）</h1>
+  <div>
+    <label for="file">アップロードするファイルを選択してください</label>
+    <input type="file" id="file" name="file" accept=".csv">
+  </div>
+  <div>
+    <button onclick="load_csv()">送信</button>
+  </div>
+  <div id="select_lesson_num" style="margin:15px 0px">
+  </div>
+  <div id="select_lesson_num" style="margin:15px 0px">
+    <div id="container0"></div>
+    <div id="container1"></div>
+    <div id="container2"></div>
+    <div id="container3"></div>
+    <div id="container4"></div>
+    <div id="container5"></div>
+    <div id="container6"></div>
+    <div id="container7"></div>
+    <div id="container8"></div>
+    <div id="container9"></div>
+  </div>
+</body>
+</html>
